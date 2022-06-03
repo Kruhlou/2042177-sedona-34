@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
           </a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-list-secondary">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">
@@ -38,7 +39,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <button class="button" type="button">
+          <button class="navigation-link" type="button">
             <span class="visually-hidden">
               Избранное
             </span>
@@ -109,7 +110,7 @@
              Апартаменты
            </label>
         </fieldset>
-        <button class="button" type="submit">
+        <button class="button button-secondary" type="submit">
           Применить
         </button>
         <button class="button" type="reset">
@@ -121,35 +122,37 @@
       <h2 class="visually-hidden">
         Список гостиниц
       </h2>
-      <p>
-        Найдено гостиниц: 38
-      </p>
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">
-          Сначала дешевые
-        </option>
-        <option value="popular">
-          Сначала популярные
-        </option>
-        <option value="expensive">
-          Сначала дорогие
-        </option>
-      </select>
-      <a class="catalog-view-button" href="#">
-        <span class="visually-hidden">
-          Плитка
-        </span>
-      </a>
-      <a class="catalog-view-button" href="#">
-        <span class="visually-hidden">
-          Слайд-шоу
-        </span>
-      </a>
-      <a class="catalog-view-button" href="#">
-        <span class="visually-hidden">
-          Список
-        </span>
-      </a>
+      <div class="product-navigation-top">
+        <p class="product-list-title">
+          Найдено гостиниц: 38
+        </p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">
+            Сначала дешевые
+          </option>
+          <option value="popular">
+            Сначала популярные
+          </option>
+          <option value="expensive">
+            Сначала дорогие
+          </option>
+        </select>
+        <a class="catalog-view-button" href="#">
+          <span class="visually-hidden">
+            Плитка
+          </span>
+        </a>
+        <a class="catalog-view-button" href="#">
+          <span class="visually-hidden">
+            Слайд-шоу
+          </span>
+        </a>
+        <a class="catalog-view-button" href="#">
+          <span class="visually-hidden">
+            Список
+          </span>
+        </a>
+      </div>
       <ol class="product-card-list">
         <li class="product-card">
           <a class="product-card-link" href="#">
