@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">
+          <a class="navigation-link navigation-link_current" href="index.html">
             Главная
           </a>
         </li>
@@ -27,7 +28,7 @@
           </a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-list-secondary">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">
@@ -36,7 +37,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <button class="button" type="button">
+          <button class="navigation-link" type="button">
             <span class="visually-hidden">
               Избранное
             </span>
@@ -55,7 +56,7 @@
   </header>
   <main class="main-index">
     <img class="main-logo" src="/images/index-logo.jpg" width="1200" height="485"  alt="Логотип-приветствие">
-    <h1 class="main-title">
+    <h1 class="section-title">
       Седона — небольшой городок в Аризоне, заслуживающий большего!
     </h1>
     <section class="advantages">
@@ -64,8 +65,8 @@
         Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
       </p>
       <ol class="advantages-list">
-        <li class="advantages-item">
-          <div class="advantages-card">
+        <li class="advantages-item main-item">
+          <div class="advantages-card main-card">
             <h3 class="advantage-title">
               Настоящий городок
             </h3>
@@ -76,9 +77,9 @@
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
-          <img src="/images/photo-city.jpg" width="800" height="384" alt="Вид на городок">
+          <img class="advantage-photo" src="/images/photo-city.jpg" width="800" height="384" alt="Вид на городок">
           <ul class="advantage-sublist">
-            <li class="advantage-subitem advantages-card">
+            <li class="advantage-subitem advantages-card second-card">
               <h4 class="advantage-title">
                  Жильё
               </h4>
@@ -94,7 +95,7 @@
                 Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
-            <li class="advantage-subitem advantages-card">
+            <li class="advantage-subitem advantages-card second-card">
               <h4 class="advantage-title">
                 Сувениры
               </h4>
@@ -104,9 +105,9 @@
             </li>
           </ul>
         </li>
-        <li class="advantages-item">
-           <img src="/images/photo-devils-bridge.jpg" width="800" height="384" alt="Вид на мост дьявола">
-           <div class="advantages-card">
+        <li class="advantages-item main-item">
+           <img class="advantage-photo" src="/images/photo-devils-bridge.jpg" width="800" height="384" alt="Вид на мост дьявола">
+           <div class="advantages-card main-card">
               <h3 class="advantage-title">
                 Там есть мост дьявола
               </h3>
@@ -118,7 +119,7 @@
               </p>
            </div>
         </li>
-        <li class="advantages-item advantages-card">
+        <li class="advantages-item advantages-card second-card">
           <h3 class="advantage-title">
             Небольшая площадь
           </h3>
@@ -129,7 +130,7 @@
             Все достопримечательности находятся очень близко
           </p>
         </li>
-        <li class="advantages-item advantages-card">
+        <li class="advantages-item advantages-card third-card">
           <h3 class="advantage-title">
             Красивая дорога
           </h3>
@@ -140,7 +141,7 @@
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </p>
         </li>
-        <li class="advantages-item advantages-card">
+        <li class="advantages-item advantages-card second-card">
           <h3 class="advantage-title">
             Мало туристов
           </h3>
@@ -176,7 +177,7 @@
           Email
         </label>
         <input class="field field-light" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button button-secondary" type="submit">
+        <button class="button button-secondary newsletter-button" type="submit">
           Подписаться
         </button>
       </form>

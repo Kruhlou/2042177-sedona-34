@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -24,12 +25,12 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link-current" href="catalog.html">
+          <a class="navigation-link navigation-link_current" href="catalog.html">
             Гостиницы
           </a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-list-secondary">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">
@@ -38,7 +39,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <button class="button" type="button">
+          <button class="navigation-link" type="button">
             <span class="visually-hidden">
               Избранное
             </span>
@@ -77,39 +78,39 @@
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">
-            Инфраструктура
+            Инфраструктура:
           </legend>
           <label class="control">
-            <input class="control-input" type="checkbox" name="Бассейн" checked>
+            <input class="control-input input-checkbox" type="checkbox" name="Бассейн" checked>
             Бассейн
           </label>
           <label class="control">
-            <input class="control-input" type="checkbox" name="Парковка" checked>
+            <input class="control-input input-checkbox" type="checkbox" name="Парковка" checked>
             Парковка
           </label>
           <label class="control">
-            <input class="control-input" type="checkbox" name="Wi-fi">
+            <input class="control-input input-checkbox" type="checkbox" name="Wi-fi">
             Wi-fi
           </label>
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">
-            Тип жилья
+            Тип жилья:
           </legend>
            <label class="control">
-            <input class="control-input" type="radio" name="catalog-product-type" value="hotel" checked>
+            <input class="control-input input-radio" type="radio" name="catalog-product-type" value="hotel" checked>
             Гостиница
            </label>
            <label class="control">
-             <input class="control-input" type="radio" name="catalog-product-type" value="motel">
+             <input class="control-input input-radio" type="radio" name="catalog-product-type" value="motel">
              Мотель
            </label>
            <label class="control">
-             <input class="control-input" type="radio" name="catalog-product-type" value="apartments">
+             <input class="control-input input-radio" type="radio" name="catalog-product-type" value="apartments">
              Апартаменты
            </label>
         </fieldset>
-        <button class="button" type="submit">
+        <button class="button button-secondary" type="submit">
           Применить
         </button>
         <button class="button" type="reset">
@@ -121,35 +122,37 @@
       <h2 class="visually-hidden">
         Список гостиниц
       </h2>
-      <p>
-        Найдено гостиниц: 38
-      </p>
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">
-          Сначала дешевые
-        </option>
-        <option value="popular">
-          Сначала популярные
-        </option>
-        <option value="expensive">
-          Сначала дорогие
-        </option>
-      </select>
-      <a class="catalog-view-button" href="#">
-        <span class="visually-hidden">
-          Плитка
-        </span>
-      </a>
-      <a class="catalog-view-button" href="#">
-        <span class="visually-hidden">
-          Слайд-шоу
-        </span>
-      </a>
-      <a class="catalog-view-button" href="#">
-        <span class="visually-hidden">
-          Список
-        </span>
-      </a>
+      <div class="product-navigation-top">
+        <p class="product-list-title">
+          Найдено гостиниц: 38
+        </p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">
+            Сначала дешевые
+          </option>
+          <option value="popular">
+            Сначала популярные
+          </option>
+          <option value="expensive">
+            Сначала дорогие
+          </option>
+        </select>
+        <a class="catalog-view-button" href="#">
+          <span class="visually-hidden">
+            Плитка
+          </span>
+        </a>
+        <a class="catalog-view-button" href="#">
+          <span class="visually-hidden">
+            Слайд-шоу
+          </span>
+        </a>
+        <a class="catalog-view-button" href="#">
+          <span class="visually-hidden">
+            Список
+          </span>
+        </a>
+      </div>
       <ol class="product-card-list">
         <li class="product-card">
           <a class="product-card-link" href="#">
@@ -289,53 +292,57 @@
           </span>
         </li>
       </ol>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">
-            1
-          </a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">
-            2
-          </a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">
-            3
-          </a>
-        </li>
-        <li class="pagination-item pagination-search">
-          <a class="pagination-link" href="#">
-            4
-          </a>
-        </li>
-        <li class="pagination-item">
-          <span class="pagination-link">
-            ...
-          </span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link " href="#">
-            10
-          </a>
-        </li>
-      </ul>
-      <div class="page-limiter">
-        <label class="page-limiter-label" for="page-limiter-select">
-          Гостиниц на странице:
-        </label>
-        <select class="page-limiter-select" id="page-limiter-select">
-          <option value="4" selected>
-            4
-          </option>
-          <option value="8">
-            8
-          </option>
-          <option value="12">
-            12
-          </option>
-        </select>
+      <div class="catalog-navigation-bottom">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination_current">
+              <span class="pagination-title">
+                1
+              </span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">
+              2
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">
+              3
+            </a>
+          </li>
+          <li class="pagination-item ">
+            <a class="pagination-link" href="#">
+              4
+            </a>
+          </li>
+          <li class="pagination-item ">
+            <span class="pagination-link pagination-search">
+              ...
+            </span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link " href="#">
+              10
+            </a>
+          </li>
+        </ul>
+        <div class="page-limiter">
+          <label class="page-limiter-label" for="page-limiter-select">
+            Гостиниц на странице:
+          </label>
+          <select class="page-limiter-select" id="page-limiter-select">
+            <option value="4" selected>
+              4
+            </option>
+            <option value="8">
+              8
+            </option>
+            <option value="12">
+              12
+            </option>
+          </select>
+        </div>
       </div>
     </section>
     <section class="subscribe-section subscribe-section-light">
