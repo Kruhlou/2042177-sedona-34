@@ -9,8 +9,9 @@
 
 <body>
     <header class="page-header">
-      <img class="logo" src="/images/logo.svg" width="138" height="70" alt="Логотип Седоны">
-      <nav class="navigation">
+      <a class="navigation-logo" href="#">
+        <img class="logo" src="images/logo.svg" width="138" height="70" alt="Логотип Седоны">
+      </a>      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link_current" href="index.html">
@@ -30,21 +31,21 @@
         </ul>
         <ul class="navigation-list navigation-list-secondary">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <button class="navigation-link favorites" type="button">
+            <a class="navigation-link favorites" type="button">
               <span class="visually-hidden">
                 Избранное
               </span>
               <span class="favorites-counter">
                 12
               </span>
-            </button>
+            </a>
           </li>
           <li class="navigation-item">
             <button class="button button-primery button-middle" type="button">
@@ -55,9 +56,10 @@
       </nav>
     </header>
     <main class="main-index">
-      <img class="main-logo" src="/images/index-logo.jpg" width="1200" height="485"  alt="Логотип-приветствие">
-      <h1 class="section-title">
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
+      <img class="main-logo" src="images/index-logo.jpg" width="1200" height="485"  alt="Логотип-приветствие">
+      <img class="main-logo-divider" src="images/index-logo-divider.svg" width="1200px" height="57px" alt="Обрамление логотипа">
+      <h1 class="section-title main-section-title">
+        Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
       </h1>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -70,36 +72,36 @@
               <h3 class="advantage-title">
                 Настоящий городок
               </h3>
-              <p class="advantages-numeration">
+              <p class="advantage-numeration">
                 — №1 —
               </p>
-              <p class="advantages-description">
+              <p class="advantage-description">
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
             <img class="advantage-photo" src="/images/photo-city.jpg" width="800" height="384" alt="Вид на городок">
             <ul class="advantage-sublist">
-              <li class="advantage-subitem advantages-card second-card">
+              <li class="advantage-subitem advantages-card second-card card-home">
                 <h4 class="advantage-title">
                   Жильё
                 </h4>
-                <p class="advantages-description">
+                <p class="advantage-description">
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
-              <li class="advantage-subitem advantages-card">
+              <li class="advantage-subitem advantages-card card-food">
                 <h4 class="advantage-title">
                   Еда
                 </h4>
-                <p class="advantages-description">
+                <p class="advantage-description">
                   Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
-              <li class="advantage-subitem advantages-card second-card">
+              <li class="advantage-subitem advantages-card second-card card-suvenir">
                 <h4 class="advantage-title">
                   Сувениры
                 </h4>
-                <p class="advantages-description">
+                <p class="advantage-description">
                   Не только китайского, но и настоящего местного производства!
                 </p>
               </li>
@@ -109,12 +111,12 @@
             <img class="advantage-photo" src="/images/photo-devils-bridge.jpg" width="800" height="384" alt="Вид на мост дьявола">
             <div class="advantages-card main-card">
                 <h3 class="advantage-title">
-                  Там есть мост дьявола
+                  Там есть <br> мост дьявола
                 </h3>
-                <p class="advantages-numeration">
+                <p class="advantage-numeration">
                   — №2 —
                 </p>
-                <p class="advantages-description">
+                <p class="advantage-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
             </div>
@@ -123,32 +125,32 @@
             <h3 class="advantage-title">
               Небольшая площадь
             </h3>
-            <p class="advantages-numeration">
+            <p class="advantage-numeration">
               — №3 —
             </p>
-            <p class="advantages-description">
+            <p class="advantage-description">
               Все достопримечательности находятся очень близко
             </p>
           </li>
           <li class="advantages-item advantages-card third-card">
             <h3 class="advantage-title">
-              Красивая дорога
+              Красивая <br> дорога
             </h3>
-            <p class="advantages-numeration">
+            <p class="advantage-numeration">
               — №4 —
             </p>
-            <p class="advantages-description">
+            <p class="advantage-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="advantages-item advantages-card second-card">
             <h3 class="advantage-title">
-              Мало туристов
+              Мало <br> туристов
             </h3>
-            <p class="advantages-numeration">
+            <p class="advantage-numeration">
               — №5 —
             </p>
-            <p class="advantages-description">
+            <p class="advantage-description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
@@ -158,10 +160,10 @@
         <h2 class="section-title">
           Заинтересовались?
         </h2>
-        <p class="section-description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        <p class="section-description appointment-description">
+          Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="button button-primery button-big" type="button">
+        <button class="button button-primery button-big appointment-button" type="button">
           Поиск гостиницы в Седоне
         </button>
       </section>
@@ -170,13 +172,13 @@
           Подпишитесь на рассылку
         </h2>
         <p class="section-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама, <br> честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">
             Email
           </label>
-          <input class="field field-light" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button button-secondary newsletter-button" type="submit">
             Подписаться
           </button>
