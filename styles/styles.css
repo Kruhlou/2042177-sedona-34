@@ -87,6 +87,7 @@ body {
 .button-middle {
   width: 160px;
 }
+
 .button-big {
   font-size: 20px;
   line-height: 36px;
@@ -94,6 +95,7 @@ body {
   width: 574px;
 
 }
+
 .button-filter {
   padding: 14px 15px;
 }
@@ -107,12 +109,20 @@ body {
   width: 200px;
 }
 
+.reset-button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding-top: 20px;
+}
+
 .section-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
-  margin:0;
+  margin: 0;
 }
 
 .section-description {
@@ -134,7 +144,7 @@ body {
 
 .logo {
   margin-right: 30px;
-  position:relative;
+  position: relative;
   z-index: 2;
 }
 
@@ -163,7 +173,7 @@ body {
 }
 
 .navigation-list-secondary .navigation-item {
-  margin:0px;
+  margin: 0px;
   align-self: center;
 }
 
@@ -211,7 +221,7 @@ body {
   text-align: center;
   width: 20px;
   height: 20px;
-  border-radius:10px;
+  border-radius: 10px;
   font-weight: 400;
   font-size: 10px;
   line-height: 20px;
@@ -239,7 +249,7 @@ body {
 
 .main-index {
   color: #000000;
-  background-color:#FFFFFF;
+  background-color: #FFFFFF;
   text-align: center;
   flex-grow: 1;
 }
@@ -311,6 +321,7 @@ body {
   padding: 0px;
   display: block;
 }
+
 .advantages-card {
   margin: 0px;
   padding: 92px 85px;
@@ -349,7 +360,8 @@ body {
 }
 
 .third-card {
-  background-color: rgba(131, 179, 211, 0.2); ;
+  background-color: rgba(131, 179, 211, 0.2);
+  ;
 }
 
 .advantage-description {
@@ -437,25 +449,29 @@ body {
   line-height: 21px;
   opacity: 0.6;
 }
+
 /* footer */
 
-.page-footer{
+.page-footer {
   height: 120px;
   margin: 0px;
   padding: 0px 72px 0px 72px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-social-list {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  gap: 26px;
 }
 
 .footer-social-item {
   display: inline-block;
-  }
+}
 
 .address-phone {
   font-family: inherit;
@@ -466,9 +482,12 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  }
+}
 
 /* catalog */
+.main-inner {
+  flex-grow: 1;
+}
 
 .main-inner-header {
   background-image: url(../images/catalog/catalog-filter-background.jpg);
@@ -476,6 +495,7 @@ body {
   background-repeat: no-repeat;
   height: 393px;
   color: #FFFFFF;
+  padding: 35px 70px 70px 70px;
 }
 
 .inner-header-title {
@@ -486,16 +506,31 @@ body {
   line-height: 78px;
   text-transform: none;
 }
+
 .catalog-filter {
   display: flex;
   font-size: 20px;
-line-height: 26px;
+  line-height: 26px;
 }
+
 .breadcrumbs {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
   color: inherit;
   list-style-type: none;
   font-size: 16px;
   line-height: 21px;
+  display: flex;
+  align-content: center;
+}
+
+.breadcrumbs-link:first-child {
+  margin-right: 14px;
+}
+
+
+.breadcrumbs-link path {
+  fill: #FFFFFF;
 }
 
 .catalog-filter-group {
@@ -503,12 +538,58 @@ line-height: 26px;
   display: flex;
   flex-direction: column;
   border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.catalog-filter-title {
+  padding: 0px;
+}
+
+.filter-infrastructure {
+  margin-right: 70px;
+}
+
+.filter-type {
+  margin-right: 175px;
 }
 
 .control-input {
   width: 20px;
   height: 20px;
   background: #FFFFFF;
+}
+
+.price-group {
+  display: flex;
+  margin-right: 70px;
+}
+
+.price-field {
+  padding: 0px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  width: 143px;
+  height: 48px;
+  background: none;
+  color: inherit;
+}
+
+.price-field:first-child {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-right: 0px;
+}
+
+.price-field:last-child {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.catalog-filter-buttons {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-list-title {
@@ -525,9 +606,11 @@ line-height: 26px;
 }
 
 .product-navigation-top {
-  display: -webkit-flex;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 .product-card-list {
   padding: 0px;
@@ -590,6 +673,7 @@ line-height: 26px;
   margin: 0;
   min-width: 140px;
 }
+
 .product-card-price {
   margin: 0;
   min-width: 140px;
@@ -603,9 +687,6 @@ line-height: 26px;
 /* catalog navigation bottom*/
 
 .catalog-navigation-bottom {
-  margin-left: 73px;
-  margin-right: 71px;
-  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
 }
