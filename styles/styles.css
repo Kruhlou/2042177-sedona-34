@@ -419,7 +419,6 @@ body {
 /*appointment */
 
 .appointment {
-  height: 417px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -435,7 +434,6 @@ body {
 /* subscribe */
 
 .subscribe-section {
-  min-height: 411px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -493,11 +491,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 26px;
 }
 
-.footer-social-item {
-  display: inline-block;
+.footer-social-link {
+  display: block;
+  width: 48px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
 }
 
 .address-phone {
@@ -560,7 +561,8 @@ body {
   content: "";
   background-image: url(../images/icons/breadcrumbs.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   width: 6px;
   height: 8px;
   margin: 0 10px;
@@ -568,7 +570,6 @@ body {
   }
 
 .breadcrumbs-link {
-  height: 100%;
   text-decoration: none;
 }
 
@@ -590,6 +591,7 @@ body {
 
 .catalog-filter-title {
   padding: 0;
+  margin: 0;
 }
 
 .filter-infrastructure {
@@ -681,10 +683,9 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 18px;
 }
 
 .catalog-view {
@@ -711,8 +712,7 @@ body {
   max-width: 340px;
   min-height: 438px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -731,20 +731,23 @@ body {
   margin: 0;
 }
 
+.product-card-property {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+  margin-top: auto;
+}
+
 .product-card-title {
-  margin: 0;
-  margin-top: 16px;
+  margin: 16px 0;
 }
 
 .product-card-type {
   margin: 0;
-  margin-top: 16px;
   min-width: 140px;
 }
 
 .product-card-price {
-  margin: 0;
-  margin-top: 16px;
   min-width: 140px;
   font-weight: 400;
 }
@@ -765,6 +768,8 @@ body {
   padding: 8px 22px;
   background: #F2F2F2;
   border-radius: 4px;
+  width: 140px;
+  height: 37px;
 }
 
 
