@@ -657,11 +657,11 @@ body {
   align-content: center;
 }
 
-.breadcrumbs-item:hover {
+.breadcrumbs-link[href]:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-item:active {
+.breadcrumbs-link[href]:active {
   opacity: 0.3;
 }
 
@@ -932,7 +932,8 @@ body {
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 32px 14px 20px;
+  padding-left: 20px;
+  padding-right: 32px;
   appearance: none;
   background-image: url(../images/icons/arrow.svg);
   background-repeat: no-repeat;
@@ -1166,7 +1167,8 @@ body {
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 32px 14px 20px;
+  padding-left: 20px;
+  padding-right: 32px;
   appearance: none;
   background-image: url(../images/icons/arrow.svg);
   background-repeat: no-repeat;
