@@ -527,7 +527,7 @@ body {
   padding: 0;
   background-color: #F2F2F2;
   font-family: inherit;
-  padding-left: 20px;
+  padding: 20px;
   font-size: 18px;
   line-height: 21px;
 
@@ -932,7 +932,7 @@ body {
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 20px;
+  padding: 14px 32px 14px 20px;
   appearance: none;
   background-image: url(../images/icons/arrow.svg);
   background-repeat: no-repeat;
@@ -1166,7 +1166,7 @@ body {
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 20px;
+  padding: 14px 32px 14px 20px;
   appearance: none;
   background-image: url(../images/icons/arrow.svg);
   background-repeat: no-repeat;
