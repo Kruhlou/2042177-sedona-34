@@ -713,8 +713,8 @@ body {
   margin-right: 70px;
 }
 
-.filter-type {
-  margin-right: 175px;
+.filter-price {
+  margin-left: auto;
 }
 
 .control {
@@ -801,13 +801,13 @@ body {
   color: inherit;
 }
 
-.price-field:first-child {
+.price-minimal {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   border-right: 0;
 }
 
-.price-field:last-child {
+.price-maximal {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -826,6 +826,70 @@ body {
   background-color: #756257;
 }
 
+.price-field-label {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.price-field-placeholder {
+  opacity: 0.3;
+  position: absolute;
+  top: 318px;
+  appearance: textfield;
+}
+
+.range-group {
+  margin-top: 16px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 287px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+  width: 227px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.range-toggle:focus {
+  outline: 0;
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
 .catalog-filter-buttons {
   align-self: flex-end;
   display: flex;
@@ -842,7 +906,7 @@ body {
 }
 
 .product-list {
-  padding: 50px 72px 25px 72px;
+  padding: 55px 72px 25px 72px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -856,6 +920,7 @@ body {
 }
 
 .product-list-title {
+  margin: 0;
   margin-right: 35px;
 }
 
@@ -982,23 +1047,23 @@ body {
 }
 
 .rating-one-star {
-  width: 24px;
+  width: 18px;
 }
 
 .rating-two-stars {
-  width: 48px;
+  width: 42px;
 }
 
 .rating-three-stars {
-  width: 72px;
+  width: 66px;
 }
 
 .rating-four-stars {
-  width: 96px;
+  width: 90px;
 }
 
 .rating-five-stars {
-  width: 120px;
+  width: 114px;
 }
 
 .product-card-rating {
