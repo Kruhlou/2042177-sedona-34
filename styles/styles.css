@@ -829,13 +829,14 @@ body {
 .price-minimal {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  border-right: 0;
+  border-right: 1px solid #FFFFFF;
 }
 
 .price-maximal {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
+  border-left: 1px solid #FFFFFF;
 }
 
 .price-field:hover {
@@ -893,6 +894,10 @@ body {
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .range-toggle:focus {
   outline: 0;
   border: 3px solid #83B3D3;
@@ -907,7 +912,6 @@ body {
 
 .toggle-min {
   top: -8px;
-
 }
 
 .toggle-max {
@@ -1434,16 +1438,12 @@ body {
 
 .tooltip-text:after {
   content:'';
-  background-image: url("images/tooltip-arrow.svg");
-  width: 14px;
-  height: 6px;
+  background-image: url("../images/tooltip-triangle.svg");
+  width: 19px;
+  height: 9px;
   position:absolute;
-  transform: rotate(180deg);
-  top: 100%;
-  left:0;
-  right:0;
-  margin-left: auto;
-  margin-right: auto;
+  top: -9px;
+  right: 120px;
 }
 
 .tooltip {
