@@ -881,7 +881,6 @@ body {
   position: absolute;
   height: 4px;
   background-color: #FFFFFF;
-  width: 227px;
 }
 
 .range-toggle {
@@ -986,17 +985,9 @@ body {
   opacity: 0.3;
 }
 
-.product-card-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0 18px;
-}
-
 .catalog-view {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -1025,6 +1016,15 @@ body {
 
 .catalog-view-button-current {
   border: 2px solid #000000;
+}
+
+.product-card-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 0 18px;
 }
 
 .product-card {
@@ -1351,18 +1351,24 @@ body {
   position: relative;
 }
 
+.number-field-wrapper:focus-within {
+  outline: 3px solid #83B3D3;
+}
+
 .number-field {
   width: 133px;
   height: 50px;
   border: 0;
   padding: 0;
   text-align: center;
+  border-radius: 4px;
 }
 
 .number-field::-webkit-inner-spin-button,
 .number-field::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+  -moz-appearance: textfield;
 }
 
 .number-field-button {
@@ -1416,6 +1422,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   top: 58px;
+  z-index: 2;
 }
 
 .modal-hint-error {
