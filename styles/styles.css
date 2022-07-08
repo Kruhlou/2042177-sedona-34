@@ -176,8 +176,7 @@ body {
   text-transform: none;
   width: 100px;
   height: 32px;
-  padding-top: 4px;
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 .reset-button:hover {
@@ -206,7 +205,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .page-header {
@@ -478,12 +477,12 @@ body {
 /*appointment */
 
 .appointment {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
 .appointment-description {
-  margin: 30px 0 0 0;
+  margin: 29px 0 0 0;
 }
 
 .appointment-button {
@@ -560,7 +559,7 @@ body {
 .page-footer {
   min-height: 120px;
   margin: 0;
-  padding: 40px 72px;
+  padding: 40px 72px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -717,15 +716,17 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
-  gap: 16px;
+  gap: 15px;
 }
 
 .catalog-filter-title {
   padding: 0;
   margin: 0;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 26px;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .filter-infrastructure {
@@ -740,6 +741,7 @@ body {
 .filter-price {
   margin-left: auto;
   max-width: 288px;
+  margin-right: 70px;
 }
 
 .control {
@@ -811,36 +813,56 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.price-group {
+.price-field-group {
   display: flex;
-  margin-right: 70px;
+  margin-top: 4px;
+}
+
+.price-field-wrap {
+  position: relative;
+   margin-right: -2px;
+   width: calc(50% + 1px);
 }
 
 .price-field {
-  padding: 14px 40px 11px 19px;
+  padding: 14px 40px 13px 18px;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
   width: 143px;
   height: 48px;
   background: none;
   color: inherit;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .price-minimal {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  border-right: 1px solid #FFFFFF;
 }
 
 .price-maximal {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  margin-left: -1px;
-  border-left: 1px solid #FFFFFF;
 }
 
 .price-field:hover {
   opacity: 0.6;
+}
+
+.price-field-wrap:first-child .price-field:not(:active):not(:focus) {
+  border-right-color: transparent;
+}
+
+.price-field-wrap:first-child:hover + .price-field-wrap .price-field:not(:focus) {
+  border-left-color: transparent;
+}
+
+.price-field-wrap:first-child .price-field:hover:not(:active):not(:focus) {
+  border-right-color: rgba(255, 255, 255, 0.6);
 }
 
 .price-field:focus {
@@ -864,15 +886,14 @@ body {
 .price-field-placeholder {
   opacity: 0.3;
   position: absolute;
-  top: 12px;
+  top: 0;
   right: 15px;
 }
 
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
-  margin-top: 16px;
+  margin-top: 12px;
   background-color: rgba(255, 255, 255, 0.3);
   width: 287px;
 }
@@ -934,7 +955,7 @@ body {
 }
 
 .product-list {
-  padding: 50px 72px 25px 72px;
+  padding: 55px 72px 25px 72px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -942,15 +963,13 @@ body {
 /* top-navigation*/
 
 .product-navigation-top {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .product-list-title {
   margin: 0;
-  margin-right: 35px;
 }
 
 .select-control {
@@ -958,6 +977,7 @@ body {
   height: 49px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   padding-left: 20px;
@@ -966,6 +986,7 @@ body {
   background-image: url(../images/icons/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right 5%;
+  margin-left: auto;
 }
 
 .select-control:hover {
@@ -989,6 +1010,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-left: 78px;
 }
 
 .catalog-view-button {
@@ -1059,6 +1081,9 @@ body {
 
 .product-card-title {
   margin: 16px 0;
+  font-family: inherit;
+  line-height: 28px;
+  font-size: 24px;
 }
 
 .product-card-type {
@@ -1105,6 +1130,9 @@ body {
   border-radius: 4px;
   width: 140px;
   height: 37px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 
@@ -1119,7 +1147,7 @@ body {
   margin-top: 66px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding-top: 30px;
   border-top: 1px solid #E6E6E6;
 }
 
@@ -1207,7 +1235,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 55px 70px 70px;
+  padding: 54px 70px 70px;
   background-color: #ffffff;
   border-radius: 30px;
   background: #FFFFFF;
@@ -1248,6 +1276,7 @@ body {
 .modal-title {
   font-weight: 700;
   font-size: 30px;
+  margin: 0;
   line-height: 36px;
   text-transform: uppercase;
 }
@@ -1362,13 +1391,13 @@ body {
   padding: 0;
   text-align: center;
   border-radius: 4px;
+  -moz-appearance: textfield;
 }
 
 .number-field::-webkit-inner-spin-button,
 .number-field::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-  -moz-appearance: textfield;
 }
 
 .number-field-button {
