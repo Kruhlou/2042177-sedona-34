@@ -129,22 +129,26 @@
           <legend class="catalog-filter-title">
             Стоимость, ₽:
           </legend>
-          <div class="price-group">
-            <label class="price-field-label">
-              <span class="price-field-placeholder">
-                от
-              </span>
-              <input class="price-field price-minimal" type="text" name="minimal-price" value="0">
-            </label>
-            <label class="price-field-label">
-              <span class="price-field-placeholder">
-                до
-              </span>
-            <input class="price-field price-maximal" type="text" name="maximal-price" value="9000">
-            </label>
+          <div class="price-field-group">
+            <div class="price-field-wrap">
+              <label class="price-field-label">
+                <span class="price-field-placeholder">
+                  от
+                </span>
+                <input class="price-field price-minimal" type="text" name="minimal-price" value="0">
+              </label>
+            </div>
+            <div class="price-field-wrap">
+              <label class="price-field-label">
+                <span class="price-field-placeholder">
+                  до
+                </span>
+                <input class="price-field price-maximal" type="text" name="maximal-price" value="9000">
+              </label>
+            </div>
           </div>
             <div class="range-scale">
-              <div class="range-bar">
+              <div class="range-bar" style="width:227px; margin-left:0">
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">
                     Изменить минимальную цену
@@ -176,7 +180,7 @@
         <p class="product-list-title">
           Найдено гостиниц: 38
         </p>
-        <select class="field select-control" aria-label="Сортировка">
+        <select class="select-control" aria-label="Сортировка">
           <option value="cheap" selected>
             Сначала дешевые
           </option>
@@ -382,7 +386,7 @@
           <label class="page-limiter-label" for="page-limiter-select">
             Гостиниц на странице:
           </label>
-          <select class="field page-limiter-select" id="page-limiter-select">
+          <select class="select-control page-limiter-select" id="page-limiter-select">
             <option value="4" selected>
               4
             </option>
