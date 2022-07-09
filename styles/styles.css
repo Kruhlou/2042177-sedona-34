@@ -65,9 +65,13 @@ body {
   border-radius: 4px;
   background: none;
   padding: 9px 15px 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .button-product-card {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -80,9 +84,10 @@ body {
   border: 0;
   border-radius: 4px;
   background: none;
-  margin: auto;
   padding: 8px 15px;
-  margin-top: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .button-primary {
@@ -335,33 +340,39 @@ body {
 
 .main-logo-wrapper{
   background-color: #82B3D3;
-
+  background-image: url(../images/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 485px;
+  position: relative;
+  display: block;
+  padding: 51px 371px 82px 371px;
 }
 
 .main-logo {
   display: block;
-  position: relative;
 }
 
 .main-logo-wrapper::after {
   content: "";
   background-image: url(../images/index-logo-divider.svg);
   display: block;
-  position: relative;
+  position: absolute;
+  background-repeat: no-repeat;
   width: 100%;
   height: 57px;
-  background-repeat: no-repeat;
-  margin-top: -55px;
+  margin-top: 25px;
+  margin-left: -371px;
 }
 
 .main-section-title {
-  margin: 0;
-  margin-top: 63px;
+  margin: 63px 0 0;
   padding: 0 70px;
 }
 
 .advantages {
   margin: 0;
+  margin-top: 31px;
 }
 
 .advantages-list {
@@ -784,6 +795,10 @@ body {
   opacity: 0.3;
 }
 
+.control-input:disabled + .input-checkbox {
+  opacity: 0.1;
+}
+
 .control-input:checked + .input-checkbox {
   background-image: url(../images/icons/marker-check.svg);
   background-repeat: no-repeat;
@@ -809,6 +824,10 @@ body {
 
 .control-input:active + .input-radio {
   opacity: 0.3;
+}
+
+.control-input:disabled + .input-radio {
+  opacity: 0.1;
 }
 
 .control-input:checked + .input-radio {
@@ -1016,7 +1035,19 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   margin-left: 78px;
-  width: 160 px;
+  width: 160px;
+}
+
+.view-list {
+  background-image: url(../images/icons/view-list.svg);
+}
+
+.view-slideshow {
+  background-image: url(../images/icons/view-slideshow.svg);
+}
+
+.view-tile {
+  background-image: url(../images/icons/view-tile.svg);
 }
 
 .catalog-view-button {
@@ -1024,9 +1055,8 @@ body {
   border-radius: 4px;
   width: 48px;
   height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-view-button:hover {
@@ -1232,7 +1262,7 @@ body {
   appearance: none;
   background-image: url(../images/icons/arrow.svg);
   background-repeat: no-repeat;
-  background-position: center right 5%;
+  background-position: center right 9%;
 }
 
 .modal {
@@ -1484,6 +1514,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  text-transform: none;
   padding: 15px 18px 22px 22px;
   border-radius: 10px;
   width: 256px;
