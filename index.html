@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
   <header class="page-header">
     <a class="navigation-logo" href="#">
       <img class="logo" src="images/logo.svg" width="138" height="70" alt="Логотип Седоны">
@@ -39,7 +40,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button-favorites">
+          <a class="button-favorites" href="#">
             <span class="visually-hidden">
               Избранное
             </span>
@@ -56,6 +57,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="main-index">
     <div class="main-logo-wrapper">
     <img class="main-logo" src="images/index-logo.jpg" width="1200" height="485" alt="Логотип-приветствие">
@@ -70,18 +72,20 @@
       </p>
       <ol class="advantages-list">
         <li class="advantages-item main-item">
-          <div class="advantages-card main-card">
-            <h3 class="advantage-title">
-              Настоящий городок
-            </h3>
-            <p class="advantage-numeration">
-              — №1 —
-            </p>
-            <p class="advantage-description">
-              Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь
-            </p>
+          <div class="advantages-item-wrapper">
+            <div class="advantages-card main-card">
+              <h3 class="advantage-title">
+                Настоящий городок
+              </h3>
+              <p class="advantage-numeration">
+                — №1 —
+              </p>
+              <p class="advantage-description">
+                Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
+            <img class="advantage-photo" src="images/photo-city.jpg" width="800" height="384" alt="Вид на городок">
           </div>
-          <img class="advantage-photo" src="images/photo-city.jpg" width="800" height="384" alt="Вид на городок">
           <ul class="advantage-sublist">
             <li class="advantage-subitem advantages-card second-card card-home">
               <h4 class="advantage-title">
@@ -110,18 +114,20 @@
           </ul>
         </li>
         <li class="advantages-item main-item">
-          <img class="advantage-photo" src="images/photo-devils-bridge.jpg" width="800" height="384"
-            alt="Вид на мост дьявола">
-          <div class="advantages-card main-card">
-            <h3 class="advantage-title">
-              Там есть <br> мост дьявола
-            </h3>
-            <p class="advantage-numeration">
-              — №2 —
-            </p>
-            <p class="advantage-description">
-              Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется
-            </p>
+          <div class="advantages-item-wrapper">
+            <img class="advantage-photo" src="images/photo-devils-bridge.jpg" width="800" height="384"
+              alt="Вид на мост дьявола">
+            <div class="advantages-card main-card">
+              <h3 class="advantage-title">
+                Там есть <br> мост дьявола
+              </h3>
+              <p class="advantage-numeration">
+                — №2 —
+              </p>
+              <p class="advantage-description">
+                Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется
+              </p>
+            </div>
           </div>
         </li>
         <li class="advantages-item advantages-card second-card">
@@ -163,7 +169,7 @@
       <h2 class="section-title">
         Заинтересовались?
       </h2>
-      <p class="section-description appointment-description">
+      <p class="section-description">
         Укажите предполагаемые даты поездки, <br> и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
       </p>
       <button class="button button-primary button-big appointment-button" type="button">
@@ -189,12 +195,12 @@
       </form>
     </section>
   </main>
+
   <footer class="page-footer">
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="footer-social-link" href="https://vk.com/htmlacademy" target="_blank">
-          <svg aria-hidden="true" focusable="false" width="24" height="15"  xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 1.45c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V1.45c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67 1.78 1.75 2.07 2.53 3.08 2.53h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" /></g><defs><clipPath id="a"><path  transform="translate(0 .5)" d="M0 0h24v14H0z" /></clipPath></defs></svg>
-        </a>
+          <svg aria-hidden="true" focusable="false" width="24" height="15"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.5,1.5c0.2-0.6,0-0.9-0.8-0.9H20c-0.7,0-1,0.3-1.1,0.7c0,0-1.3,3.2-3.2,5.3c-0.6,0.6-0.9,0.8-1.2,0.8 c-0.2,0-0.4-0.2-0.4-0.7V1.5c0-0.7-0.2-0.9-0.7-0.9H9.1c-0.4,0-0.7,0.3-0.7,0.6c0,0.6,0.9,0.8,1.1,2.5v3.8c0,0.8-0.2,1-0.5,1 C8.1,8.4,6,5.2,4.7,1.5c-0.2-0.7-0.5-1-1.2-1H0.9C0.1,0.5,0,0.9,0,1.2c0,0.7,0.9,4.1,4.1,8.6c2.2,3.1,5.2,4.7,8,4.7 c1.7,0,1.9-0.4,1.9-1v-2.3c0-0.7,0.2-0.9,0.7-0.9c0.4,0,1.1,0.2,2.6,1.7c1.8,1.8,2.1,2.5,3.1,2.5H23c0.8,0,1.1-0.4,0.9-1.1 c-0.2-0.7-1.1-1.8-2.2-3c-0.6-0.7-1.5-1.5-1.8-1.9c-0.4-0.5-0.3-0.7,0-1.1C19.9,7.4,23.1,2.9,23.5,1.5z"/></svg>        </a>
       </li>
       <li class="footer-social-item">
         <a class="footer-social-link" href="https://t.me/htmlacademy" target="_blank">
@@ -216,6 +222,7 @@
       <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" width="115" height="34" xmlns="http://www.w3.org/2000/svg"><path d="M0 13.9v2.6h2.5v-2.6H0ZM11.6 5.5c-1.6 0-2.8.7-3.6 1.7h-.1V1h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.8h-4.8V2.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.8h4.8v-2ZM41.1 5.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V5.8H29v10.6h2V11c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V1h-2v12.7ZM28.9 20.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 23c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V23ZM55.1 20.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V14.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 28l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
     </a>
   </footer>
+
   <div class="modal-container modal-container-close">
     <div class="modal modal-registration">
       <section class="modal-content">
@@ -230,7 +237,7 @@
               Дата заезда:
             </label>
             <div class="date-field-wrapper">
-              <input class="field registration-field" type="text" name="check-in date" id="check-in date" placeholder="27 апреля 2020">
+              <input class="field registration-field" type="text" name="check-in date" id="check-in date" placeholder="27 апреля 2020" required>
               <button class="date-button" type="button">
                 <svg class="field-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
               </button>
@@ -244,7 +251,7 @@
               Дата выезда:
             </label>
             <div class="date-field-wrapper">
-              <input class="field registration-field" type="text" name="check-off date" id="check-off date" placeholder="1 сентября 2021">
+              <input class="field registration-field" type="text" name="check-off date" id="check-off date" placeholder="1 сентября 2021" required>
               <button class="date-button" type="button">
                 <svg class="field-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
               </button>
@@ -264,7 +271,7 @@
                 </span>
                 <svg class="field-icon number-field-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
               </button>
-              <input class="field number-field" type="number" name="adult" min="1" max="10" id="adult" value="2">
+              <input class="field number-field" type="number" name="adult" min="1" max="10" id="adult" value="2" required>
               <button class="number-field-button button-more" type="button">
                 <span class="visually-hidden">
                   Больше на один
@@ -294,7 +301,7 @@
                 </span>
                 <svg class="field-icon number-field-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
               </button>
-              <input class="field number-field" type="number" name="children" min="0" max="10" id="children" value="1">
+              <input class="field number-field" type="number" name="children" min="0" max="10" id="children" value="1" required>
               <button class="number-field-button button-more" type="button">
                 <span class="visually-hidden">
                   Больше на один
@@ -307,10 +314,10 @@
             Найти
           </button>
         </form>
-
       </section>
     </div>
   </div>
+
 </body>
 
 </html>
