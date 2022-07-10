@@ -65,9 +65,6 @@ body {
   border-radius: 4px;
   background: none;
   padding: 9px 15px 8px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .button-product-card {
@@ -80,14 +77,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   min-width: 140px;
-  height: 37px;
+  min-height: 37px;
   border: 0;
   border-radius: 4px;
   background: none;
   padding: 8px 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  align-self: start;
 }
 
 .button-primary {
@@ -109,6 +104,7 @@ body {
 
 .button-primary:disabled {
   background-color: #E5E5E5;
+  cursor: not-allowed;
 }
 
 .button-secondary {
@@ -123,13 +119,14 @@ body {
   background-color: #68A2CA;
 }
 
-.button-secondary:active  {
+.button-secondary:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .button-secondary:disabled {
   background-color: #E5E5E5;
+  cursor: not-allowed;
 }
 
 .button-secondary-active {
@@ -151,6 +148,7 @@ body {
 .button-secondary-active:disabled {
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
 }
 
 .button-middle {
@@ -797,6 +795,7 @@ body {
 
 .control-input:disabled + .input-checkbox {
   opacity: 0.1;
+  cursor: not-allowed;
 }
 
 .control-input:checked + .input-checkbox {
@@ -828,6 +827,7 @@ body {
 
 .control-input:disabled + .input-radio {
   opacity: 0.1;
+  cursor: not-allowed;
 }
 
 .control-input:checked + .input-radio {
@@ -1028,6 +1028,7 @@ body {
 
 .select-control:disabled {
   opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .catalog-view {
@@ -1137,6 +1138,7 @@ body {
   background-image: url(../images/icons/star.svg);
   background-repeat: space;
   background-position: left center;
+  height: 37px;
 }
 
 .rating-one-star {
@@ -1166,10 +1168,11 @@ body {
   background: #F2F2F2;
   border-radius: 4px;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
 }
 
 .product-card a {
