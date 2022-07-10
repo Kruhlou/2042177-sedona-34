@@ -346,11 +346,12 @@ body {
   min-height: 485px;
   position: relative;
   display: block;
-  padding: 51px 371px 82px 371px;
+  padding: 51px 0 82px 0;
 }
 
 .main-logo {
   display: block;
+  margin: 0 auto;
 }
 
 .main-logo-wrapper::after {
@@ -361,8 +362,8 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 57px;
-  margin-top: 25px;
-  margin-left: -371px;
+  left: 0;
+  bottom: 0;
 }
 
 .main-section-title {
@@ -371,8 +372,7 @@ body {
 }
 
 .advantages {
-  margin: 0;
-  margin-top: 31px;
+  margin: 31px 0 0;
 }
 
 .advantages-list {
